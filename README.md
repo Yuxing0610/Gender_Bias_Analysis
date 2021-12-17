@@ -1,4 +1,4 @@
-﻿﻿﻿# “He” and “She”：an explorative data analysis on gender equality based on Quotebank dataset
+# “He” and “She”：Explorative Data Analysis on Gender Equality Based on Quotebank Dataset
 
 ## Data Story
 
