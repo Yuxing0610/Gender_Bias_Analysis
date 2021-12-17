@@ -1,0 +1,1123 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="utf-8" />
+		<title></title>
+		
+		<link rel="stylesheet" type="text/css" href="css/style.css" />
+		<link rel="stylesheet" type="text/css" href="css/swiper.min.css" /> </head>
+	
+	<body>
+		<div class="topf">
+			<div class="nei1">
+				<a href="#d1"><div class="titl2" id="tit1">
+					<div class="tiimg"> <img src="img/sy1.png" /> </div> <span>"He" and "She"</span> </div></a>
+				<a href="#d2"><div class="titl2" id="tit2">
+					<div class="tiimg"> <img src="img/lf2.png" /> </div> <span>Introduction</span> </div></a>
+				<a href="#d3"><div class="titl2" id="tit3">
+					<div class="tiimg"> <img src="img/pm2.png" /> </div> <span>Statistical Analysis</span> </div></a>
+				<a href="#d4"><div class="titl2" id="tit4">
+					<div class="tiimg"> <img src="img/pt2.png" /> </div> <span>Embedding Analysis</span> </div></a>
+				<a href="#d5"><div class="titl2" id="tit5">
+					<div class="tiimg"> <img src="img/zh2.png" /> </div> <span>Attitude Analysis</span> </div></a>
+				<a href="#d6"><div class="titl2" id="tit6">
+					<div class="tiimg"> <img src="img/fz2.png" /> </div> <span>Epilogue</span> </div></a>
+				<a href="#d7"><div class="titl2" id="tit7">
+					<div class="tiimg"> <img src="img/lj2.png" /> </div> <span>Reference</span> </div></a>
+			</div>
+		</div>
+		<div class="top1" id="d1">
+			<div class="top_img" style="background-image: url(img/sy.jpg);"> </div>
+			<div class="top_titl">
+				<div class="titl1">
+					<h1>"He" and "She"</h1>
+					<p><span id="dhwz"></span></p>
+					<p>An analysis done by</p>
+					<p>Yuxing, Yao&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Yueqing, Shen</p>
+					<p id="d2">Zhipeng, Mao&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Junzhe, Tang</p>
+				</div>
+			</div>
+		</div>
+		<!--顶部图片结束-->
+		<!--内容第一部分开始-->
+		<i id="d2"></i>
+		<div class="cont1" >
+			<h1>Introduction<span class="bx"></span></h1>
+			<br />
+			<br />
+			
+			<p class="fontcolo">In recent years, various efforts have been made around the world for the protection of women's rights. Many people believe that we are now in a society of relative gender equality, but does this optimism hold? Unfortunately, we still have a long way to go on the road to gender equality. The gender equality we have established is incomplete and fragile, which was revealed by the Covid-19 epidemic. According to<a href="https://annualreport.unwomen.org/en/2021" style="text-decoration: underline;color: #1677D2;"> UN Women</a>, women have a much higher rate of unemployment due to the epidemic than men, 11 million girls may lose access to education forever, and 47 million women are expected to end the year in extreme poverty because of the economic consequences of the epidemic, reversing decades of progress...</p>
+			<br />
+			<p class="fontcolo">We believe that we need to quantify the persistent sexism in our society through data, and one good approach is through conducting analysis on the voices of people from all walks of life in the media. Quotebank [1] made it possible to achieve this goal. In this project, we conducted various analyses on the dataset to explore people's gender stereotypes and discriminations and accordingly revealed women's social status, which brought to light the severity of gender inequality and urgency of making a change with solid evidence. </p>
+		</div>
+		<div class="boximg">
+			
+				<div class="c2img" > <img src="img/121.jpg" /></div>
+		
+		
+				<div class="c2img" > <img src="img/122.jpg" /><i id="d3"></i> </div>
+		</div>
+		<!--第一内容结束-->
+		<!--第二内容开始-->
+		<div class="cont1">
+			<br /><br />
+			<h1>Exploratory statistical analysis: does gender inequality exist?<span class="bx"></span></h1>
+			<br /><br />
+			<p>With the development of the whole society, the public is becoming more aware of gender inequality. Despite the fact that several proposals have been made to address gender imbalance, such as paternity-leave instead of maternity-leave and paying equality in workplaces, it is still unclear if the situation has improved.</p>
+			<p>The quote database provided us with an excellent corpus to examine the subject. The New York Times was chosen as the research corpus for this section owing to its widespread effect and a variety of other factors. We first chose about 100 pairs of feminine and masculine phrases (for example, actress - actor, she - he) and counted how many times these feminine/masculine words appeared in quotations from the New York Times from 2015 to 2020. Then we looked at the gender of the speakers to see if gender had an impact on whether speakers chose feminine or masculine terms. We also compared the frequency of masculine/feminine words usage in different fields and different political parties and achieved quite interesting results.</p>
+			<br /><br />
+			<p class="pdab">Language</p>
+			
+			<h2 class="h2_2">How do masculine/feminine words' count and ratio change as time goes?</h2>
+			<br /><br />
+			<div class="box_1">
+				<div class="nianf10 mtop">
+					<p><input type="radio" name="activity" class="nian20" value="2015" checked="checked"/><span>2015</span></p>
+					<p><input type="radio" name="activity" class="nian20" value="2016" /><span>2016</span></p>		
+					<p><input type="radio" name="activity" class="nian20" value="2017" /><span>2017</span></p>
+					<p><input type="radio" name="activity" class="nian20" value="2018" /><span>2018</span></p>
+					<p><input type="radio" name="activity" class="nian20" value="2019" /><span>2019</span></p>
+					<p><input type="radio" name="activity" class="nian20" value="2020" /><span>2020</span></p>
+				</div>
+				<div class="nei_2">
+					<div class="zxt_10 yc1" id="yu1">
+						<span class="zxtspan1">number of words</span>
+						<div class="bg3" id="xt4"></div>
+					</div>
+					<div class="zxt_10 yc1" id="yu2">
+						<span class="zxtspan1">number of words</span>
+						<div class="bg3" id="xt4_2"></div>
+					</div>
+					<div class="zxt_10 yc1" id="yu3">
+						<span class="zxtspan1">number of words</span>
+						<div class="bg3" id="xt4_3"></div>
+					</div>
+					<div class="zxt_10 yc1" id="yu4">
+						<span class="zxtspan1">number of words</span>
+						<div class="bg3" id="xt4_4"></div>
+					</div>
+					<div class="zxt_10 yc1" id="yu5">
+						<span class="zxtspan1">number of words</span>
+						<div class="bg3" id="xt4_5"></div>
+					</div>
+					<div class="zxt_10 yc1" id="yu6">
+						<span class="zxtspan1">number of words</span>
+						<div class="bg3" id="xt4_6"></div>
+					</div>	
+					
+				</div>
+			</div>	
+			<div class="box_1">
+				
+				<div class="nei_2">
+					<div class="zxt_10 yc2" id="yu11">
+						<span class="zxtspan1">Masculine/feminine words</span>
+						<div class="bg3" id="xt5"></div>
+					</div>
+					<div class="zxt_10 yc2" id="yu12">
+						<span class="zxtspan1">Masculine/feminine words</span>
+						<div class="bg3" id="xt5_2"></div>
+					</div>
+					<div class="zxt_10 yc2" id="yu13">
+						<span class="zxtspan1">Masculine/feminine words</span>
+						<div class="bg3" id="xt5_3"></div>
+					</div>
+					<div class="zxt_10 yc2" id="yu14">
+						<span class="zxtspan1">Masculine/feminine words</span>
+						<div class="bg3" id="xt5_4"></div>
+					</div>
+					<div class="zxt_10 yc2" id="yu15">
+						<span class="zxtspan1">Masculine/feminine words</span>
+						<div class="bg3" id="xt5_5"></div>
+					</div>
+					<div class="zxt_10 yc2" id="yu16">
+						<span class="zxtspan1">Masculine/feminine words</span>
+						<div class="bg3" id="xt5_6"></div>
+					</div>
+					
+				</div>
+			</div>
+			<br />
+			<p class="c4_1">In the first two line plots, we visualized the change of the counts and ratio of masculine/feminine words throughout years from 2015 to 2020. From these line plots, on one hand, we can observe an almost random change in the counts and ratio of masculine and feminine words On the other hand, most of the masculine/feminine ratios are over 1, which indicates a higher usage of masculine words than feminine words. Next, we examined the masculine/feminine words usage in different categories, as well as the gender of speakers to find out possible explanations of this intriguing phenomenon.</p>
+			<br />
+			<h2 class="h2_2"> How are masculine/feminine words used in different categories?</h2>
+			<br /><br />
+			<div class="box_1">
+				<div class="nianf10 rig2">
+					<p><input type="radio" name="activity3" class="nian22" value="2015" checked="checked"/><span>2015</span></p>
+					<p><input type="radio" name="activity3" class="nian22" value="2016" /><span>2016</span></p>		
+					<p><input type="radio" name="activity3" class="nian22" value="2017" /><span>2017</span></p>
+					<p><input type="radio" name="activity3" class="nian22" value="2018" /><span>2018</span></p>
+					<p><input type="radio" name="activity3" class="nian22" value="2019" /><span>2019</span></p>
+					<p><input type="radio" name="activity3" class="nian22" value="2020" /><span>2020</span></p>
+				</div>
+				<div class="nei_2">
+					<div class="zxt_10 yc3" id="yu21">
+						<div class="xt2">
+							<div class="mar" id="zfj5">
+								
+							</div>
+						
+						</div>
+					</div>
+					<div class="zxt_10 yc3" id="yu22">
+						<div class="xt2">
+							<div class="mar" id="zfj5_2">
+								
+							</div>
+							
+						</div>
+					</div>
+					<div class="zxt_10 yc3" id="yu23">
+						<div class="xt2">
+							<div class="mar" id="zfj5_3">
+								
+							</div>
+							
+						</div>
+					</div>
+					<div class="zxt_10 yc3" id="yu24">
+						<div class="xt2">
+							<div class="mar" id="zfj5_4">
+								
+							</div>
+							
+						</div>
+					</div>
+					<div class="zxt_10 yc3" id="yu25">
+						<div class="xt2">
+							<div class="mar" id="zfj5_5">
+								
+							</div>
+							
+						</div>
+					</div>
+					<div class="zxt_10 yc3" id="yu26">
+						<div class="xt2">
+							<div class="mar" id="zfj5_6">
+								
+							</div>
+							
+						</div>
+					</div>
+				</div>
+			</div>
+			<br /><br />
+			<p class="c4_1">Quotations were first categorized into different fields and the masculine/feminine words ratio was computed in every field. For most fields, the masculine words percentage is mostly higher than 50% and the phenomenon is commonly observed in quotations from 2015 to 2020.</p>
+			<br />
+			<br /><br />
+			<div class="" style="position: relative;">
+				<span class="sp31">Masculine words percentage(%)</span>
+				<span class="sp32">Feminine and masculine words total usage</span>
+				<div class="zzxt">
+					<div class="zzxt1" id="zzxt1_1"></div>
+					<div class="zzxt1" id="zzxt1_2"></div>
+					<div class="zzxt1" id="zzxt1_3"></div>
+					<div class="zzxt1" id="zzxt1_4"></div>
+					<div class="zzxt1" id="zzxt1_5"></div>
+					<div class="zzxt1" id="zzxt1_6"></div>
+					<div class="zzxt1" id="zzxt1_7"></div>
+					<div class="zzxt1" id="zzxt1_8"></div>
+					<div class="zzxt1" id="zzxt1_9"></div>
+					<div class="zzxt1" id="zzxt1_10"></div>
+				</div>
+			</div>
+			<p class="c4_1">We also note that for some hit topics (with higher total word usage) such as politics, sports, and arts, the masculine words percentage is always far higher than 0.5, while for topics like real-estate, masculine/feminine words ratio is always not that high (0.5~0.6). For topics like health, food, travel, and video, the masculine words percentage fluctuates sharply around 50% which may result from the small sample size.</p>
+			<br /><br /><br /><br />
+			<p class="pdab">Language and gender</p>
+			<br />
+			<h2 class="h2_2">Who contributes to the use of masculine/feminine words?</h2>
+			<br /><br />
+			<div class="box_1" style="height: 700px;">
+				<div class="nianf10 rig1">
+					<p><input type="radio" name="activity4" class="nian23" value="2015" checked="checked"/><span>2015</span></p>
+					<p><input type="radio" name="activity4" class="nian23" value="2016" /><span>2016</span></p>		
+					<p><input type="radio" name="activity4" class="nian23" value="2017" /><span>2017</span></p>
+					<p><input type="radio" name="activity4" class="nian23" value="2018" /><span>2018</span></p>
+					<p><input type="radio" name="activity4" class="nian23" value="2019" /><span>2019</span></p>
+					<p><input type="radio" name="activity4" class="nian23" value="2020" /><span>2020</span></p>
+				</div>
+				<div class="nei_2">
+					<div class="bzt1 yc4" id="yu31">
+						<div class="bzt" id="bzt1"></div>
+						<div class="bzt" id="bzt2"></div>
+						<div class="bzt" id="bzt3"></div>
+						<div class="bzt" id="bzt4"></div>
+					</div>
+					<div class="bzt1 yc4" id="yu32">
+						<div class="bzt" id="bzt1_2"></div>
+						<div class="bzt" id="bzt2_2"></div>
+						<div class="bzt" id="bzt3_2"></div>
+						<div class="bzt" id="bzt4_2"></div>
+					</div>
+					<div class="bzt1 yc4" id="yu33">
+						<div class="bzt" id="bzt1_3"></div>
+						<div class="bzt" id="bzt2_3"></div>
+						<div class="bzt" id="bzt3_3"></div>
+						<div class="bzt" id="bzt4_3"></div>
+					</div>
+					<div class="bzt1 yc4" id="yu34">
+						<div class="bzt" id="bzt1_4"></div>
+						<div class="bzt" id="bzt2_4"></div>
+						<div class="bzt" id="bzt3_4"></div>
+						<div class="bzt" id="bzt4_4"></div>
+					</div>
+					<div class="bzt1 yc4" id="yu35">
+						<div class="bzt" id="bzt1_5"></div>
+						<div class="bzt" id="bzt2_5"></div>
+						<div class="bzt" id="bzt3_5"></div>
+						<div class="bzt" id="bzt4_5"></div>
+					</div>
+					<div class="bzt1 yc4" id="yu36">
+						<div class="bzt" id="bzt1_6"></div>
+						<div class="bzt" id="bzt2_6"></div>
+						<div class="bzt" id="bzt3_6"></div>
+						<div class="bzt" id="bzt4_6"></div>
+					</div>
+				</div>		
+			</div>			
+		
+			<br /><br />
+			<p class="c4_1">The information of the speakers was then incorporated for comparison, and speakers of masculine and feminine terms were classified by gender, with the findings shown in the four pie charts. From the first 2 pie plots, we can see that for the usage of both masculine and feminine words, male speakers have more contributions than female speakers. By comparing the composition of words used by males and females, we found that males prefer to use masculine words while females use masculine and feminine words almost equally. So far, we seem to be able to partly explain why masculine words are used more than feminine words: males speak “more”. In other words, males have more opportunity to speak than females, and meanwhile, males tend to speak much more masculine words than feminine words.</p>			
+			<br /><br />
+			<h2 class="h2_2">What are the most frequently used feminine/masculine words?</h2>
+			<br />
+			<p class="c4_1">Between 2015 and 2020, in the 30 most frequently used feminine words, "witch" ("wizard"), "vagina" ("penis"), "girlfriend" ("boyfriend"), "maiden" ("bachelor"), "spinster" ("bachelor"), "feminism" ("masculism") ’s masculine counterparts can’t be found in the corresponding 30 most frequently used masculine words, whereas "god" ("goddess"), "governor" ("governess"), "chairman" ("chairwoman"), "master" ("mistress") ‘s feminine counterparts can't be found in the corresponding 30 most frequently used masculine words.</p>
+			<br /><br />
+			<div class="dcbox">
+				<div class="nianf">
+					<p><input type="radio" name="nian18" class="nian1" value="2015" checked="checked" /><span>2015</span></p>
+					<p><input type="radio" name="nian18" class="nian1" value="2016" /><span>2016</span></p>		
+					<p><input type="radio" name="nian18" class="nian1" value="2017" /><span>2017</span></p>
+					<p><input type="radio" name="nian18" class="nian1" value="2018" /><span>2018</span></p>
+					<p><input type="radio" name="nian18" class="nian1" value="2019" /><span>2019</span></p>
+					<p><input type="radio" name="nian18" class="nian1" value="2020" /><span>2020</span></p>
+				</div>
+				<div class="zfj10">
+					<div class="zfj_1" id="zfj10">
+							
+					</div>
+
+				</div>
+			</div>
+			<br />
+			<p class="c4_1">From this word list, we can also discover something interesting assuming that the most frequently used words of certain gender can reflect the image of the gender in the social media. The most frequently used feminine words including "woman", "girl", "wife", "daughter", "sister", "lady", "queen", "girlfriend", "witch", "princess" are considered to be the major social roles of females, whereas the most frequently used masculine words including "man", "guy", "god", "father", "governor", "actors", "husband", "brother", "king", "hero", "chairman" are the main roles that males play in the society.</p>
+			<p class="c4_1">From these results, we can notice that males are more related to leadership than females in the society because we didn't find "chairwoman", "governess" or "mistress" in the most frequently used feminine words. Meanwhile, females may be potentially considered as the accessories of males because "boyfriend", the masculine counterpart of "girlfriend", never appears on the most popular masculine words. Comparing the popular titles for males (Mr.) and females (Mrs. and Miss), females still seem to be categorized into married and not married. However, there is less discussion on whether a male is married or not since "spinster" ( a woman who spins wool for fabric, having long been associated with unattractive old maids) and "maiden" (unmarried woman, sometimes referring to an older unmarried woman) are on the most popular feminine wordlist while their masculine counterpart  "bachelor" is not on the most popular masculine wordlist despite the fact that almost 2 million people are achieving their "bachelor" degrees every year.</p>
+			<p class="c4_1">However, there are still encouraging discoveries. Word "feminism" being among the most popular feminine words from 2017 to 2019 indicates the gender inequality receives more and more concerns in recent years. Meanwhile, the elimination of negative feminine words "spinster" and "maiden" from the most popular feminine wordlist is a good sign for the improvement of women’s social status.</p>
+		<br /><br /><br /><br />
+		</div>
+		<!--第二内容结束-->
+		<!--第三内容开始-->
+		<div class="cont1">
+		
+			<p class="pdab">Language, Gender, and Partisanship</p>
+			<br /><br /><br />
+			<p class="c4_1">The following discovery was enlightened by a relative research[2] where researchers found Republicans use more masculine language than Democrats in their official party platform. The Quotebank dataset provided us with an opportunity to verify this statement - <b class="c5_b_1">does a difference between languages used by Republicans and Democrats really exist?</b></p>
+			<p class="c4_1">First, we took a look at the gender composition on an overall level, we can notice that despite the difference in the number of word tokens said by Republicans and Democrats, Republicans always use masculine words at a higher rate than Democrats.</p>
+			<br />
+		<div class="bzt20">
+			
+			<div class="nei_3">
+				<div class="bzt" id="zzt20"></div>
+				<div class="bzt" id="zzt21"></div>
+				<div class="bzt" id="bzt5"></div>
+				<div class="bzt" id="bzt6"></div>
+			</div>
+			<div class="nei_3" >
+				<div class="bzt" id="zzt20_2"></div>
+				<div class="bzt" id="zzt21_2"></div>
+				<div class="bzt" id="bzt5_2"></div>
+				<div class="bzt" id="bzt6_2"></div>
+			</div>
+			<div class="nei_3" >
+				<div class="bzt" id="zzt20_3"></div>
+				<div class="bzt" id="zzt21_3"></div>
+				<div class="bzt" id="bzt5_3"></div>
+				<div class="bzt" id="bzt6_3"></div>
+			</div>
+			<div class="nei_3" >
+				<div class="bzt" id="zzt20_4"></div>
+				<div class="bzt" id="zzt21_4"></div>
+				<div class="bzt" id="bzt5_4"></div>
+				<div class="bzt" id="bzt6_4"></div>
+			</div>
+			<div class="nei_3">
+				<div class="bzt" id="zzt20_5"></div>
+				<div class="bzt" id="zzt21_5"></div>
+				<div class="bzt" id="bzt5_5"></div>
+				<div class="bzt" id="bzt6_5"></div>
+			</div>
+			<div class="nei_3">
+				<div class="bzt" id="zzt20_6"></div>
+				<div class="bzt" id="zzt21_6"></div>
+				<div class="bzt" id="bzt5_6"></div>
+				<div class="bzt" id="bzt6_6"></div>
+			</div>
+			<div class="nianf2_2">
+					<p><input type="radio" name="nian20" class="nian2_1" value="2015" checked="checked" /><span>2015</span></p>
+					<p><input type="radio" name="nian20" class="nian2_1" value="2016" /><span>2016</span></p>		
+					<p><input type="radio" name="nian20" class="nian2_1" value="2017" /><span>2017</span></p>
+					<p><input type="radio" name="nian20" class="nian2_1" value="2018" /><span>2018</span></p>
+					<p><input type="radio" name="nian20" class="nian2_1" value="2019" /><span>2019</span></p>
+					<p><input type="radio" name="nian20" class="nian2_1" value="2020" /><span>2020</span></p>
+			</div>
+		</div>
+			
+			<br /><br />
+			
+			<h2 class="h2_2">How is the speakers’ gender composition in the two parties? </h2>
+			<br />
+			<p class="c5_p_1">Then, we inspected how much female speakers and male speakers contribute to feminine words and masculine words usage in the two parties respectively and found out that in Democratic Party, the ratio of female speakers to male speakers is always more balanced than in Republican Party, indicating women have more chance to voice in Democratic Party. Another auxiliary evidence is that Hillary Clinton, the first woman to win a presidential nomination by a major U.S. political party, comes from Democratic Party.</p>
+			<br />
+			<div class="xt2">
+				
+				<div class="nei_5">
+					<div id="zzt22" class="xt2_10"></div>
+					<div id="zzt23" class="xt2_10"></div>
+				</div>
+				<div class="nei_5">
+					<div id="zzt22_2" class="xt2_10"></div>
+					<div id="zzt23_2" class="xt2_10"></div>
+				</div>
+				<div class="nei_5">
+					<div id="zzt22_3" class="xt2_10"></div>
+					<div id="zzt23_3" class="xt2_10"></div>
+				</div>
+				<div class="nei_5">
+					<div id="zzt22_4" class="xt2_10"></div>
+					<div id="zzt23_4" class="xt2_10"></div>
+				</div>
+				<div class="nei_5">
+					<div id="zzt22_5" class="xt2_10"></div>
+					<div id="zzt23_5" class="xt2_10"></div>
+				</div>
+				<div class="nei_5">
+					<div id="zzt22_6" class="xt2_10"></div>
+					<div id="zzt23_6" class="xt2_10"></div>
+				</div>
+				<div class="nianf2_1">
+					<p><input type="radio" name="nian1" class="nian2" value="2015" checked="checked" /><span>2015</span></p>
+					<p><input type="radio" name="nian1" class="nian2" value="2016" /><span>2016</span></p>		
+					<p><input type="radio" name="nian1" class="nian2" value="2017" /><span>2017</span></p>
+					<p><input type="radio" name="nian1" class="nian2" value="2018" /><span>2018</span></p>
+					<p><input type="radio" name="nian1" class="nian2" value="2019" /><span>2019</span></p>
+					<p><input type="radio" name="nian1" class="nian2" value="2020" /><span>2020</span></p>
+				</div>
+			</div>
+			<br />
+			<p class="c4_1">We also found a similar phenomenon that male speakers tend to speak more masculine words than females in both Parties. In five of six years concerned, both females and males in Democratic Party tend to speak more feminine words than females and males in Republican Party. Recapping the previous discovery that in topics like politics, the percentage of the masculine words is always far higher than 50%, we also noticed from year 2016 to 2020, female and male speakers from both parties tend to speak more masculine words than feminine words, and the percentage of masculine words these politicians used is higher than the average of the whole dataset of each year. The result suggests that politicians in two major American parties use more masculine words than average speakers, regardless of their gender. </p>
+			<br /><br />
+			<h2 class="h2_2">How is the gender composition of "the most influential speakers"?</h2>
+			<br />
+			<p class="c4_1">If we assume that speakers with more spoken words detected are more “influential”, we can then display the gender composition of the 50 "most influential" speakers in Democratic Party and Republican Party. First, we noticed that the majority of "most influential speakers" are male. However, if we try to compare between the two parties, Democratic Party consistently has more female speakers among the top 50 “most influential” speakers.</p>
+			<br /><br />
+			<div class="xt2">
+				<div class="nei_6 yc5" id="yu41">
+					<div id="zzt24" class="xt2_10"></div>
+					<div id="zzt25" class="xt2_10"></div>
+				</div>
+				<div class="nei_6 yc5" id="yu42">
+					<div id="zzt24_2" class="xt2_10"></div>
+					<div id="zzt25_2" class="xt2_10"></div>
+				</div>
+				<div class="nei_6 yc5" id="yu43">
+					<div id="zzt24_3" class="xt2_10"></div>
+					<div id="zzt25_3" class="xt2_10"></div>
+				</div>
+				<div class="nei_6 yc5" id="yu44">
+					<div id="zzt24_4" class="xt2_10"></div>
+					<div id="zzt25_4" class="xt2_10"></div>
+				</div>
+				<div class="nei_6 yc5" id="yu45">
+					<div id="zzt24_5" class="xt2_10"></div>
+					<div id="zzt25_5" class="xt2_10"></div>
+				</div>
+				<div class="nei_6 yc5" id="yu46">
+					<div id="zzt24_6" class="xt2_10"></div>
+					<div id="zzt25_6" class="xt2_10"></div>
+				</div>
+				<div class="nianf10 rig2">
+					<p><input type="radio" name="activity5" class="nian24" value="2015" checked="checked"/><span>2015</span></p>
+					<p><input type="radio" name="activity5" class="nian24" value="2016" /><span>2016</span></p>		
+					<p><input type="radio" name="activity5" class="nian24" value="2017" /><span>2017</span></p>
+					<p><input type="radio" name="activity5" class="nian24" value="2018" /><span>2018</span></p>
+					<p><input type="radio" name="activity5" class="nian24" value="2019" /><span>2019</span></p>
+					<p><input type="radio" name="activity5" class="nian24" value="2020" /><span>2020</span></p>
+				</div>
+			</div>
+			<br />
+			<p class="c4_1">In order to confirm our preliminary observation, we examined if the ratio of male speakers to female speakers is statistically different between Democratic Party and Republican Party by t-test. Except for year 2017 (p-value = 0.058), t-test for the other 5 years shows a statistical difference w.r.t. the male/female ratio between the two parties.</p>
+			<br /><br />
+			<table class="tab5">
+				<tr>
+					<th>year</th>
+					<th>p-value of levene test</th>
+					<th>p-value of t-test</th>
+				</tr>
+				<tr>
+					<td>2015</td>
+					<td>0.4239</td>
+					<td>0.0276</td>
+				</tr>
+				<tr>
+					<td>2016</td>
+					<td>0.1177</td>
+					<td>0.0002</td>
+				</tr>
+				<tr>
+					<td>2017</td>
+					<td>0.4988</td>
+					<td>0.0577</td>
+				</tr>
+				<tr>
+					<td>2018</td>
+					<td>0.7730</td>
+					<td>0.0030</td>
+				</tr>
+				<tr>
+					<td>2019</td>
+					<td>0.5672</td>
+					<td>0.0373</td>
+				</tr>
+				<tr>
+					<td>2020</td>
+					<td>0.4239</td>
+					<td>0.0498</td>
+				</tr>
+			</table>
+			<h2 class="h2_2">Are the results of the paper also valid in our dataset?</h2>
+			<br />
+			<p class="c4_1">We introduced the word list generated by the research with scores on 700 selected words (ranging from 1-7, i.e. most feminine - most masculine), extracted speakers who have used words in this wordlist and computed an average score for each speaker. We started with a simple and naive comparison by ignoring the influence of party differences and simply dividing our samples into female group andmale group and visualized the score distribution in female/male groups. </p>
+			<p class="c4_1">We found that except year 2015, males always have a higher mean score than females. The result is consistent to what we discovered previously that males prefer to use more masculine words (with scores more positive to 7) than females and thus the average score will be higher (more masculine). </p>
+			<br />
+			<div class="box_xxt">
+				<div class="nianf3">
+					<p><input type="radio" name="nian2" class="nian3" value="2015" checked="checked" /><span>2015</span></p>
+					<p><input type="radio" name="nian2" class="nian3" value="2016" /><span>2016</span></p>		
+					<p><input type="radio" name="nian2" class="nian3" value="2017" /><span>2017</span></p>
+					<p><input type="radio" name="nian2" class="nian3" value="2018" /><span>2018</span></p>
+					<p><input type="radio" name="nian2" class="nian3" value="2019" /><span>2019</span></p>
+					<p><input type="radio" name="nian2" class="nian3" value="2020" /><span>2020</span></p>
+				</div>
+				<div class="xt20">
+					<div class="xxtspan">
+						<span class="span21 spante1">Score Distribution on different gender (2015)</span>
+						<span class="span22">gender of speaker</span>
+						<span class="span23">average score(1-7)</span>
+						<div class="" id="myDiv"></div>
+					</div>
+					<div class="xxtspan">
+						<span class="span21 spante2">Score Distribution on different parties (2015)</span>
+						<span class="span22">party of speaker</span>
+						<span class="span23">average score(1-7)</span>
+						<div class="" id="myDiv2"></div>
+					</div>
+				</div>	
+			</div>
+			
+			<br /><br />
+			<p class="c4_1">Then we divided the whole dataset into Republicans/Democrats groups and also visualized the distribution of scores. Interestingly, compared to Democrats, Republicans always has a higher average score, suggesting that Republicans uses more masculine words than Democrats. In other words, the way Republican speakers use feminine/masculine words is more like the female way while Democratic speakers behave more like males. We hypothesize that this may owe to the different gender composition of the two parties that we discovered in the previous two blocks.</p>
+			<br /><br />
+			
+	
+			<table class="tab5">
+				<tr>
+					<th>year</th>
+					<th>p-value of levene test</th>
+					<th>p-value of t-test</th>
+				</tr>
+				<tr>
+					<td>2015</td>
+					<td>0.1755</td>
+					<td>0.4744</td>
+				</tr>
+				<tr>
+					<td>2016</td>
+					<td>0.2667</td>
+					<td>0.3488</td>
+				</tr>
+				<tr>
+					<td>2017</td>
+					<td>0.7377</td>
+					<td>0.0011</td>
+				</tr>
+				<tr>
+					<td>2018</td>
+					<td>0.6385</td>
+					<td>5.6443</td>
+				</tr>
+				<tr>
+					<td>2019</td>
+					<td>0.5884</td>
+					<td>0.0011</td>
+				</tr>
+				
+			</table>
+			<br />
+			<p class="c4_1">In order to statistically prove that there exists a difference between languages used by Republicans and Democrats, we also implemented t-test here. However, the preliminary assumption doesn't hold. After conducting a t-test to compare the scores obtained by speakers from the Republican and Democratic parties, the p-values are smaller than 0.05 in 2017, 2018, 2019, indicating a statistical difference in the use of language between the Democratic and Republican parties in these years at 95% confidence level. However, no evidence shows difference exists in 2015, 2016, 2020. The interesting thing is that the turning point coincides with the presidential change (2017: Barack Obama to Donald Trump) and it’s also pointed out in the research that Donald Trump is regarded as a hyper-masculine politician by some but we still need more evidences to prove it.</p>
+			<br />
+			<p class="c4_1 clor" id="d4">From the exploratory data analysis on the corpus of New York Times from 2015 to 2020, we noticed inequality existed between males and females in their opportunity to speak up, their preference for using masculine or feminine words, and their social image. By comparing between the two American major parties, differences were found between Democratic Party and Republican Party in male to female ratio of speakers and the scores on the use of masculine and feminine words. Many factors can contribute to the differences, and more solid statistical analyses are essential for more insightful explanations.</p>
+			
+			<br>
+			<br /><br /><br /><br /><br />
+		</div>
+		<!--第三内容结束-->
+		<!--第四内容开始-->
+		<div class="cont1" >
+			<h1>Gender bias indeed exists: from the view of word embeddings<span class="bx"></span></h1>
+			<br /><br />
+			<p class="c4_1">Gender bias has been shown to be captured by a direction in the word embedding [3]. In this section, we further explore the female/male gender bias in the Quotebank dataset by using the word2vec algorithm [4] to learn word associations from the large corpus of Quotebank’s quotations.</p>
+			
+			<br>
+			<p class="c4_1">We obtained a word2vec model with 49996-word embeddings of dimension 100 after 10 epochs training on Quotebank’s quotations from 2015 to 2020 (we made the words lower-case and digits, punctuation, and words with lower frequencies than certain threshold were discarded).
+				Then we tried to understand the biases present in the word embeddings and whether these biases reflect gender stereotypes of people. To approach this problem, we evaluated whether the embedding has stereotypes on occupation and personality adjective words and evaluated whether the embeddings produce analogies that are judged to reflect human stereotypes.</p>
+			<br />
+			<br /><br />
+			<p class="pdab">Occupation and personality stereotypes</p>
+			<br /><br />
+			<h2 class="c5_h2_1">Do word embeddings contain gender biases concerning occupations?</h2>
+			
+			<p class="c4_1">We used 'he' and 'she' as the gender axes and measured the bias of certain word by projecting it onto the two axes and calculating the difference of the 'he' and 'she' components. We found the occupation words that are closest to 'she' and 'he' with definitional male or female words (e.g. salesman, saleswoman, king, queen, etc.) excluded. We can find that the results are consistent with gender stereotypes in reality. For example, football-related occupations like 'infielder', 'midfielder', 'goalkeeper', 'ballplayer', 'coach' and 'footballer' are normally considered to be male, although women also play football, while 'homemaker', 'ballerina', 'stylist', 'hairdresser' etc. are more feminine.</p>
+			<br />
+			<div class="zf100">
+				<span id="zfle" class="span100">"he"&nbsp;&nbsp;words</span>
+				<span id="zfri" class="span100">"she"&nbsp;&nbsp;words</span>
+				<div class="zf10">
+					<div class="zf10_2" id="zf10_3">
+						<div class="zfj" id="zfj2"></div>
+					</div>
+					<div class="zf10_2" id="zf10_4">
+						<div class="zfj" id="zfj1"></div>
+					</div>
+				</div>	
+			</div>
+			<div class="wid">
+				<!--<button id="btn10">"he"word</button>
+				<button id="btn11">"she"word</button>-->
+			</div>
+			
+			<br>
+			<p class="c4_1" >We also used the PCA method to reduce the dimension of word embeddings and visualized them. </p>
+			<br /><br />
+			<div class="bg3" id="sdt1" >
+				
+			</div>
+			<br />
+			<br />
+			
+			<h2 class="c5_h2_1">What about gender stereotypes on personalities?</h2>
+			<p class="c4_1">We also looked at which adjectives were more often assigned to men and women by applying the same method to personality adjectives. </p>
+			<br /><br />
+			<div class="zf100">
+				<span id="zfle2" class="span100">"he"&nbsp;&nbsp;words</span>
+				<span id="zfri2" class="span100">"she"&nbsp;&nbsp;words</span>
+				<div class="zf11">
+					<div class="zf10_2" id="zf10_5">
+						<div class="zfj" id="zfj4"></div>
+					</div>
+					<div class="zf10_2" id="zf10_6">
+						<div class="zfj" id="zfj3"></div>
+					</div>
+				</div>	
+			</div>
+			<br /><br /><br /><br /><br /><br />
+			<div class="bg15" id="sdt2">
+				
+			</div>
+			<br /><br />
+			<p class="c4_1">We can find that most of the words used to describe men are positive, while the words used to describe women are more evenly distributed to positive, neutral, and negative. Moreover, the adjectives used to describe men are usually related to intelligence and capability, like 'shrewd', 'decisive', 'efficient', 'methodical', 'excellent', 'mercurial', 'smart' etc., while the adjectives used to describe women are usually to describe the appearance and disposition like 'demure', 'dainty', 'beautiful', 'chic', 'angelic', 'sweet', 'saucy', 'delicate', 'fussy', 'vulnerable' etc, which reflects the stereotype of the division of labor between men and women in the society, i.e. men are responsible for labor and production while women are to please men. </p>
+			<br /><br />
+		
+				<table class="tg" style="table-layout: fixed; width: 571px">
+				<colgroup>
+				<col style="width: 183px">
+				<col style="width: 183px">
+				<col style="width: 183px">
+				<col style="width: 183px">
+				<col style="width: 183px">
+				<col style="width: 183px">
+				</colgroup>
+				<thead>
+				  <tr>
+				    <th class="tg-62a4" colspan="3"><span style="color:#EFEFEF;font-weight: 900;font-size: 22px;">Words used to describe men</span></th>
+				    <th class="tg-lpps" colspan="3" style="color:#EFEFEF;font-weight: 900;font-size: 22px;">Words used to describe women</th>
+				  </tr>
+				</thead>
+				<tbody>
+				  <tr>
+				    <td class="tg-ombc">positive</td>
+				    <td class="tg-fyv0">neutral</td>
+				    <td class="tg-k0jo">negative</td>
+				    <td class="tg-ombc">positive</td>
+				    <td class="tg-fyv0">neutral</td>
+				    <td class="tg-k0jo">negative</td>
+				  </tr>
+				  <tr>
+				    <td class="tg-5e12">shrewed</td>
+				    <td class="tg-uxet">average</td>
+				    <td class="tg-d6wr">crafty</td>
+				    <td class="tg-wyyi">demure</td>
+				    <td class="tg-whtn">maternal</td>
+				    <td class="tg-qplx">sassy</td>
+				  </tr>
+				  <tr>
+				    <td class="tg-wyyi">quick</td>
+				    <td class="tg-whtn"></td>
+				    <td class="tg-qplx">idle</td>
+				    <td class="tg-wyyi">dainty</td>
+				    <td class="tg-whtn">delightful</td>
+				    <td class="tg-qplx">saucy</td>
+				  </tr>
+				  <tr>
+				    <td class="tg-wyyi">decisive</td>
+				    <td class="tg-whtn"></td>
+				    <td class="tg-qplx">inconsistent</td>
+				    <td class="tg-wyyi">beautiful</td>
+				    <td class="tg-whtn">playful</td>
+				    <td class="tg-qplx">nosy</td>
+				  </tr>
+				  <tr>
+				    <td class="tg-wyyi">efficient</td>
+				    <td class="tg-whtn"></td>
+				    <td class="tg-qplx">idiotic</td>
+				    <td class="tg-wyyi">chic</td>
+				    <td class="tg-whtn">musical</td>
+				    <td class="tg-qplx">delicate</td>
+				  </tr>
+				  <tr>
+				    <td class="tg-wyyi">good</td>
+				    <td class="tg-whtn"></td>
+				    <td class="tg-qplx">inactive</td>
+				    <td class="tg-wyyi">angelic</td>
+				    <td class="tg-whtn">emotional</td>
+				    <td class="tg-qplx">fussy</td>
+				  </tr>
+				  <tr>
+				    <td class="tg-wyyi">amiable</td>
+				    <td class="tg-whtn"></td>
+				    <td class="tg-qplx"></td>
+				    <td class="tg-wyyi">sweet</td>
+				    <td class="tg-whtn"></td>
+				    <td class="tg-qplx">vulnerable</td>
+				  </tr>
+				  <tr>
+				    <td class="tg-wyyi">methodical</td>
+				    <td class="tg-whtn"></td>
+				    <td class="tg-qplx"></td>
+				    <td class="tg-wyyi">fabulous</td>
+				    <td class="tg-whtn"></td>
+				    <td class="tg-qplx">hysterical</td>
+				  </tr>
+				  <tr>
+				    <td class="tg-wyyi">impressive</td>
+				    <td class="tg-whtn"></td>
+				    <td class="tg-qplx"></td>
+				    <td class="tg-wyyi"></td>
+				    <td class="tg-whtn"></td>
+				    <td class="tg-qplx">drowsy</td>
+				  </tr>
+				  <tr>
+				    <td class="tg-wyyi">ardent</td>
+				    <td class="tg-whtn"></td>
+				    <td class="tg-qplx"></td>
+				    <td class="tg-wyyi"></td>
+				    <td class="tg-whtn"></td>
+				    <td class="tg-qplx"></td>
+				  </tr>
+				  <tr>
+				    <td class="tg-wyyi">excellent</td>
+				    <td class="tg-whtn"></td>
+				    <td class="tg-qplx"></td>
+				    <td class="tg-wyyi"></td>
+				    <td class="tg-whtn"></td>
+				    <td class="tg-qplx"></td>
+				  </tr>
+				  <tr>
+				    <td class="tg-wyyi">mercurial</td>
+				    <td class="tg-whtn"></td>
+				    <td class="tg-qplx"></td>
+				    <td class="tg-wyyi"></td>
+				    <td class="tg-whtn"></td>
+				    <td class="tg-qplx"></td>
+				  </tr>
+				  <tr>
+				    <td class="tg-wyyi">fervent</td>
+				    <td class="tg-whtn"></td>
+				    <td class="tg-qplx"></td>
+				    <td class="tg-wyyi"></td>
+				    <td class="tg-whtn"></td>
+				    <td class="tg-qplx"></td>
+				  </tr>
+				  <tr>
+				    <td class="tg-wyyi">revered</td>
+				    <td class="tg-whtn"></td>
+				    <td class="tg-qplx"></td>
+				    <td class="tg-wyyi"></td>
+				    <td class="tg-whtn"></td>
+				    <td class="tg-qplx"></td>
+				  </tr>
+				  <tr>
+				    <td class="tg-wyyi">smart</td>
+				    <td class="tg-whtn"></td>
+				    <td class="tg-qplx"></td>
+				    <td class="tg-wyyi"></td>
+				    <td class="tg-whtn"></td>
+				    <td class="tg-qplx"></td>
+				  </tr>
+				</tbody>
+				</table>
+			
+			<br /><br />
+			<br />
+			<br />
+			<p class="pdab">Stereotype analogies</p>
+			<br /><br />
+			<h2 class="c5_h2_1">What analogies can exhibit gender biases?</h2>
+			
+			<p class="c4_1">Analogies are a useful way to both evaluate the quality of a word embedding and also its biases. We used the method proposed by Bolukbasi et al. [3] to generate pairs of words, x and y, such that 'he' to x as 'she' to y is a good analogy. Most of the results are appropriate 'she'-'he' analogies, i.e. the words are definitionally feminine or masculine, which shows the quality of the model we trained is high.</p>
+			<p class="c4_1">However, gender stereotype 'she'-'he' analogies still exist. For example, 'pageants'-'boxing' reflects the stereotype of the activities that men and women take part in, and 'hairdresser'-'manager' reflects the inequality of social status of men and women. With regard to personality, analogies like 'voluptuous'-'muscular', 'sexualized'-'combative', 'sexiness'-'athleticism' show the sexual stereotype of gender. The interesting thing is that 'feminist' to 'she' is 'fascist' to 'he' in our embeddings, which shows that feminists are seen to be extremists like fascists. Besides, the analogy of 'instore'-'ingame' implies that women are indulged in shopping while men are addicted to games. </p>
+			<br />
+			
+			<br /><br />
+			<h2 class="c5_h2_1">Gender appropriate 'she'-'he' analogies</h2>
+			<table class="tab5">
+				
+				<tr style="background: #E6ECF5;">
+					<td>herself-himself</td>
+					<td>businesswoman-businessman</td>
+					<td>queen-sultan</td>
+				</tr>
+				<tr>
+					<td>sister-brother</td>
+					<td>alumna-alumnus</td>
+					<td>filly-colt</td>
+				</tr>
+				<tr>
+					<td>aunt-uncle</td>
+					<td>matriarch-patriarch</td>
+					<td>blouse-shirt</td>
+				</tr>
+				<tr>
+					<td>grandma-grandpa</td>
+					<td>councilwoman-councilman</td>
+					<td>empress-emperor</td>
+				</tr>
+				
+			</table>
+			<br /><br />
+			<h2 class="c5_h2_1">Gender stereotype 'she'-'he' analogies</h2>
+			<table class="tab5">
+				<tr><th colspan="3">Occupation</th></tr>
+				<tr>
+					<td>housewife-ballplayer</td>
+					<td>supermodel-superstar</td>
+					<td>dancer-footballer</td>
+				</tr>
+				<tr>
+					<td>gymnast-player</td>
+					<td>interviewer-evaluator</td>
+					<td>curler-kicker</td>
+				</tr>
+				<tr>
+					<td>hairdresser-manager</td>
+					<td>stylist-trainer</td>
+					<td>hairstylist-coach</td>
+				</tr>
+				<tr>
+					<td>vocalist-guitarist</td>
+					<td>midwife-physiotherapist</td>
+					<td>pageants-boxing</td>
+				</tr>
+			</table>
+			<br>
+			<table class="tab5">
+				<tr><th colspan="3">Personality</th></tr>
+				<tr>
+					<td>demure-flamboyant</td>
+					<td>glamorous-flashy</td>
+					<td>sexualized-combative</td>
+				</tr>
+				<tr>
+					<td>sassy-crafty</td>
+					<td>sultry-heady</td>
+					<td>sexiness-athleticism</td>
+				</tr>
+				<tr>
+					<td>sensual-instinctual</td>
+					<td>petite-lanky</td>
+					<td>hormonal-stiffness</td>
+				</tr>
+				<tr>
+					<td>bitchy-arrogant</td>
+					<td>voluptuous-muscular</td>
+					<td>socialite-conman</td>
+				</tr>
+			</table>
+			<br>
+			
+			<table class="tab5">
+				<tr><th colspan="3">Others</th></tr>
+				<tr>
+					<td>sexism-racism</td>
+					<td>feminism-ideology</td>
+					<td>feminist-fascist</td>
+				</tr>
+				<tr>
+					<td>netball-football</td>
+					<td>instore-ingame</td>
+					<td>cosmetics-coca</td>
+				</tr>
+				<tr>
+					<td>softball-baseball</td>
+					<td>petite-lanky</td>
+					<td>hormonal-stiffness</td>
+				</tr>
+				<tr>
+					<td>preshow-pregame</td>
+					<td>legging-helmet</td>
+					<td>petal-cactus</td>
+				</tr>
+			</table>
+			<br />
+			<p class="clor" id="d5">Word embeddings furthered our understanding of gender bias in language. The projection of embeddings on 'he' and 'she' directions enabled us to quantify their degree of male- or female-bias. These language biases reflect gender stereotypes in our society, and remind us of the importance of gender equality. </p>
+			<br /><br /><br /><br /><br /><br />
+		</div>
+		<!--第四内容结束-->
+		<!--第五内容开始-->
+		<div class="cont1">
+			<h1 style="height: 150px;">Sentiment Analysis: What are People’s Attitudes Concerning Gender Equality?<span class="bx"></span></h1> <br><br>
+			<p>From the previous analysis, we can find that gender bias and inequality indeed exist in our society. Furthermore, we are also curious about if this issue has raised concern and what people think about it. In this section, we used keyword matching to extract quotations related to gender equality from Quotebank dataset, analysed the popularity of this topic, the gender ratio of its followers and used sentiment analysis tools to capture people's attitudes towards it.</p>
+			<br /><br /><br /><br />
+			<p class="pdab">Data extraction and sentiment analysis</p>
+			<br /><br />
+			<h2 class="c5_h2_1">How to determine whether a quotation is related to gender equality？</h2>
+			<p class="c5_p_1">We used a multi-step keyword matching method to ensure that the quotations matched were relevant to gender equality. A quotation will be considered to be related to gender equality if and only if it contains all words in at least one row of the following table:</p>
+			<br />
+			<br />
+			<div class="kjia1">
+				<table class="tg1">
+				<colgroup>
+				<col style="width: 366px">
+				<col style="width: 366px">
+				<col style="width: 366px">
+				</colgroup>
+				<thead>
+				  <tr>
+				    <th class="tg-mgxk" colspan="3">feminism / maculism / sexist / ...</th>
+				  </tr>
+				</thead>
+				<tbody>
+				  <tr>
+				    <td class="tg-ym5m">gender / sex / sexual / ...</td>
+				    <td class="tg-ym5m" colspan="2">movement / bias / variance / gap / difference / equality / fairness / ...</td>
+				  </tr>
+				  <tr>
+				    <td class="tg-jlgy">male / man / men / boy / ...</td>
+				    <td class="tg-jlgy">than / as / compare to /from / by / ...</td>
+				    <td class="tg-jlgy">female / women / woman / girl / ...</td>
+				  </tr>
+				  <tr>
+				    <td class="tg-0kwr" colspan="3">...</td>
+				  </tr>
+				</tbody>
+				</table>
+				
+			</div>
+			<br />
+			<p>We recognise that such a strict matching approach may miss some quotations related to gender equality, but we here care more about the accuracy rate than the recall rate assuming that the positive/negative ratio in the recalled gender equality quotations and unrecalled ones are similar.</p>
+			<br />	<br />
+			<table class="tab3">
+				<tr><th>Some examples of the extracted quotations:</th></tr>
+				<tr><td>1.These much-needed changes to the royal succession remove gender discrimination by allowing women equal right to the throne of New Zealand  --Sean Palmer</td></tr>
+				<tr><td>2.For those citizens often more vulnerable to discrimination, and to all those around them, these changes help make clear that all British Columbians are protected under B.C.'s Human Rights Code, no matter their gender identity or expression.  --Suzanne Anton </td></tr>
+				<tr><td>3.violated our Code of Conduct and cross the line by advancing harmful gender stereotypes in our workplace  --Sundar Pichai</td></tr>
+			
+			</table>
+			<br><br />
+			
+				<h2> <br><br>
+					<h2 class="c5_h2_1">How to determine and interpret the sentiment of a quotation? </h2>
+					<p>In order to obtain people’s attitude towards gender equality, we used existing sentiment analysis toolkits to classify the extracted gender related quotations into ‘positive’ and ‘negative’. According to our observation on the results,  the quotations classified into‘positive’generally show support for gender equality, describe someone who promoted gender equality or describe a role model from the disadvantaged gender group, while those classified into ‘negative’ basically state the fact that one gender group (usually female) received unfair treatment, accuse certain people of sexism or show dissatisfaction with current situation of gender equality. Accordingly, the sentiment analysis results can reflect whether the speakers are optimistic or pessimistic about the situation of gender equality.</p>
+					<br />
+					<b class="c5_b_1">Here are some examples:</b>
+					<table class="tab2">
+						<tr>
+							<th>Text</th>
+							<th class="wi1">Pos/Neg</th>
+							<th class="wi1">Confidence</th>
+						</tr>
+						<tr>
+							<td>These current allegations point to the reality that sexual abuse of minors by the clergy should not be considered by bishops as a thing of the past or a distant memory.</td>
+							<td>Negative</td>
+							<td>0.67</td>
+						</tr>
+						<tr>
+							<td>We must recognize the intersections of anti-LGBT discrimination with racism, sexism and all forms of prejudice that impact our community and continue working to advance full lived equality.</td>
+							<td>Positive</td>
+							<td>0.99</td>
+						</tr>
+						<tr>
+							<td>The Gate Theatre joined with other theatrical institutions last week to condemn the issue of sexual harassment and abuse of power in the theatre world in Ireland and internationally.</td>
+							<td>Positive</td>
+							<td>0.83</td>
+						</tr>
+						<tr>
+							<td>believes that an evangelical culture that demeans women, promotes sexism, and disregards accusations of sexual abuse enabled Trump's rise.</td>
+							<td>Negative</td>
+							<td>0.99</td>
+						</tr>
+					</table> <br />
+				
+				<p class="c5_p_1"> Since there is no annotated dataset, we cannot perform an automated accuracy evaluation of the results of our sentiment analysis, so we can only analyze some samples by hand and find that this method can produce reasonable sentiment classification results. </p>
+			<br /><br /><br /><br />
+			<p class="pdab">Data analysis and visualization </p>
+			<br /><br />
+			
+			<br>
+			<h2 class="c5_h2_1"> How much attention are people paying to the gender equality-related topic?  </h2>
+			<br /><br />
+			<div class="zzt1st_0">
+				<div class="bg" id="zzt1"> </div>
+				<div class="bg_01">
+					<p>We counted gender equality-related quotations as a percentage of the total number of all quotations in the dataset for five consecutive years （2015-2019）, and the results are shown in the figure below：</p>
+					<p>We found that the percentage of quotations about gender equality in each of the five years was around 1 in 1,000, which is clearly not a very high percentage, and something as important as gender equality should have received much more attention. The good news, however, is that this percentage increased every year, suggesting that people were paying more attention to this issue.</p>
+				</div>
+			</div>
+			<br /><br />
+			<h2 class="c5_h2_1">Is gender equality of equal concern to different gender groups？</h2>		
+			<br />
+			<p class="c5_p_1">We counted the number of gender-specific topics raised by gender equality and calculated the percentage of the two gender groups respectively, and obtained the following graphs.</p>
+			<div class="xt2">
+				<div id="xtt1">
+					
+				</div>
+				<div id="xtt2">
+					
+				</div>
+			</div>
+			<br>
+			<p>In terms of numbers, the number of men following the topic of gender equality is higher than the number of women following the topic. But proportionally, the rate of women following it is much higher than that of men. Here are two plausible explanations for the results from our perspectives: </p>
+			<p>1.Men are significantly less concerned about gender equality than women, which is not the way it should be. Though women are often considered as the victims of sexism, gender stereotypes can also be harmful to men since each of us is a stakeholder in gender equality. Hence, men need to be more concerned about gender equality, and fortunately, we have observed such a trend in this five-year continuous data. </p>
+			
+			<p>2.Women have too few opportunities to be heard, and the percentage of women in all attributers is far lower than that of men. Women deserve more opportunities to speak up and be heard in all areas rather than not being noticed until they start to fight for their rights.</p>
+		
+			<br /><br />
+			<h2 class="c5_h2_1">
+			What are people's attitudes toward gender equality, positive or negative? 
+			</h2>
+			<p class="c5_p_1">First we analyzed the percentage of quotations with positive attitudes toward gender equality.</p>
+			<div class="zzt1st">
+				<div class="bg" id="zzt11"> </div>
+					<p>
+						While the majority of people are still negative about the topic of gender equality, we can clearly see a growth in the percentage of people with positive views, which is great news. Keep it going! 
+					</p>
+			</div>
+			<br><br>
+			<p class="c5_p_1">Above is the overall attitude of people, when we divide the population by gender, will there be any  differences in attitudes towards gender equality between men and women?</p>
+			<br />
+			<div class="zzt1st1">
+				<div id="xtt3" class="bg10">
+					
+				</div>
+				<div class="bg10" >
+					<span>The female population is generally more optimistic than the male population, but this is not intuitive, as women are often more vulnerable to persecution for gender inequality. After taking these into consideration, the following reasons come to our mind:</span>
+					<br><br>
+					<span>1.Generally speaking, men are less concerned about gender equality, and thus men who focus on the topic of gender equality have higher probability to have experienced or observed such events with an overwhelmingly severe level of inequality that they are more likely to hold a pessimistic view.</span>
+					<br><br>
+					<span>2.Another possible reason is the growing awareness of gender inequality among men. Their awareness of the magnitude of sexism, and their concern and voice for it, have led women to believe there is hope for improvement and becoming more optimistic.</span>
+				</div>
+			</div>
+			<br /><br />
+			<p class="clor" id="d6">The topic of gender equality is gaining more and more attention, but its still needs more people, especially more men, to pay attention to it. The situation has improved in recent years, but in general there are still serious inequalities, and we need to maintain and accelerate the current trend of increasing gender equality. </p>
+			<br />
+			<br />
+			<br />
+			<br />
+			<br />
+			<br />
+		</div>
+		<!--第五内容结束-->
+		<!--第六内容开始-->
+		<div class="cont1">
+			<h1>Epilogue <span class="bx"></span></h1>
+			<br /><br />
+			<p>Our project reveals the existence of gender inequality in our society based on the analysis on the Quotebank dataset from different perspectives like statistics, word embedding and sentimental analysis. Even though our project is only a glimpse into this issue, the results do show the necessity and urgency to improve the social status of women, which is a long way to go and takes more explorations and efforts. </p>
+			<br />
+			
+			<div class="bg1">
+				<div class="swiper-container" id="box1">
+					<div class="swiper-wrapper">
+						<div class="swiper-slide sd1"><img src="img/gp1.jpg"/></div>
+						<div class="swiper-slide sd2"><img src="img/jd.jpg"/></div>
+						<div class="swiper-slide sd3" ><img src="img/gy.jpg"/></div>
+					</div>
+					<div class="swiper-pagination abc" id="bcd"></div>
+				</div>
+				<i id="d7"></i>
+			</div> <br> <br><br> <br><br> 
+			
+		</div>
+		<!--第六内容结束-->
+		<!--第七内容开始-->
+		<div class="cont1">
+			<h1>References<span class="bx"></span></h1> <br><br>
+			<p>[1] 	T. Vaucher, A. Spitz, M. Catasta and R. West, "Quotebank: A Corpus of Quotations from a Decade of News," in Proceedings of the 14th ACM International Conference on Web Search and Data Mining, Virtual Event, Israel, 2021. </p>
+			<br />
+			<p>[2] D. C. Roberts and S. M. Utych, “Linking gender, language, and partisanship: Developing a database of masculine and feminine words,” Political Research Quarterly, vol. 73, no. 1, pp. 40–50, 2019.</p>
+			<br />
+			<p>[3] 	T. Bolukbasi, K.-W. Chang, J. Zou, V. Saligrama and A. Kalai, "Man is to Computer Programmer as Woman is to Homemaker? Debiasing Word Embeddings," in Proceedings of the 30th International Conference on Neural Information Processing Systems, Barcelona, Spain, 2016. </p>
+			<br />
+			<p>[4] 	T. Mikolov, I. Sutskever, K. Chen, G. S. Corrado and J. Dean, "Distributed Representations of Words and Phrases and their Compositionality," in Advances in Neural Information Processing Systems, 2013. </p>
+			<br />
+			<br />
+			<br />
+			<br />
+			<br />
+			<br />
+		</div>
+	
+		<!--第九内容开始-->
+		<div class="cont1">
+			<h1>SOME USEFUL LINKS<span class="bx"></span></h1> <br><br>
+			<div class="bot">
+				<div class="bot_1" id="tz1">
+					<div class="c9_svg">
+						<svg t="1639044318161" class="icon svg2" viewBox="0 0 1024 1024" version="1.1" p-id="2346" width="48" height="48">
+							<path d="M576 742.4H324.267c-12.8 0-21.334 8.533-21.334 21.333s8.534 21.334 21.334 21.334H576c12.8 0 21.333-8.534 21.333-21.334S584.533 742.4 576 742.4zM699.733 576H324.267c-12.8 0-21.334 8.533-21.334 21.333 0 12.8 8.534 21.334 21.334 21.334h375.466c12.8 0 21.334-8.534 21.334-21.334 0-12.8-8.534-21.333-21.334-21.333zM324.267 281.6h102.4c12.8 0 21.333-8.533 21.333-21.333 0-12.8-8.533-21.334-21.333-21.334h-102.4c-12.8 0-21.334 8.534-21.334 21.334 0 12.8 8.534 21.333 21.334 21.333zM678.4 55.467H221.867c-46.934 0-85.334 38.4-85.334 85.333v750.933c0 46.934 38.4 85.334 85.334 85.334H806.4c46.933 0 85.333-38.4 85.333-85.334V281.6L678.4 55.467z m166.4 832c0 21.333-17.067 42.666-42.667 42.666H221.867c-21.334 0-42.667-17.066-42.667-42.666V136.533c0-21.333 17.067-42.666 42.667-42.666h375.466v209.066c0 21.334 17.067 42.667 42.667 42.667h209.067v541.867zM635.733 302.933V93.867h21.334L844.8 302.933H635.733z m-332.8 123.734c0 12.8 8.534 21.333 21.334 21.333h375.466c12.8 0 21.334-8.533 21.334-21.333 0-12.8-8.534-21.334-21.334-21.334H324.267c-12.8 4.267-21.334 12.8-21.334 21.334z" p-id="2347" fill="#FFA76E"></path>
+						</svg>
+					</div>
+					<h4>GITHUB</h4> </div>
+				<div class="bot_1" id="tz2">
+					<div class="c9_svg">
+						<svg t="1639044491445" class="icon svg2" viewBox="0 0 1024 1024" version="1.1" p-id="3621" width="48" height="48">
+							<path d="M814.933333 512l-98.133333-98.133333 29.866667-29.866667 149.333333 149.333333-149.333333 149.333334-29.866667-29.866667 98.133333-98.133333H554.666667v-42.666667h260.266666zM209.066667 512H469.333333v42.666667H209.066667l98.133333 98.133333-29.866667 29.866667L128 533.333333 277.333333 384l29.866667 29.866667L209.066667 512z" fill="#1296db" p-id="3622"></path>
+						</svg>
+					</div>
+					<h4>ADA</h4> </div>
+				<div class="bot_1" id="tz3">
+					<div class="c9_svg">
+						<svg t="1639044569777" class="icon svg2" viewBox="0 0 1024 1024" version="1.1" p-id="4666" width="48" height="48">
+							<path d="M896 256v32L512 416 128 288v-32l384-128 384 128zM512 480L224 384l-96 32v32l384 128 384-128v-32l-96-32-288 96z m0 160L224 544l-96 32v32l384 128 384-128v-32l-96-32-288 96z m0 160L224 704l-96 32v32l384 128 384-128v-32l-96-32-288 96z" p-id="4667" fill="#d4237a"></path>
+						</svg>
+					</div>
+					<h4>DATA</h4> </div>
+			</div>
+		</div>
+		<!--第九内容结束-->
+		<div class="bottom">
+			<div class="bott1">
+				<h1 class="bot_h1">"He"and"She"</h1>
+				<p>Yao Yuxing, Shen Yueqing, Mao Zhipeng, Tang Junzhe </p>
+				<p>E-mail:&nbsp;&nbsp;&nbsp;yuxing.yao@epfl.ch</p>
+			</div>
+		</div>
+		
+	</body>
+	<script src="http://libs.baidu.com/jquery/2.0.0/jquery.min.js"></script>
+	<script src="js/click.js" type="text/javascript" charset="utf-8"></script>
+	<script src='https://cdn.plot.ly/plotly-2.6.3.min.js'></script>
+	<script src="js/swiper.min.js" type="text/javascript" charset="utf-8"></script>
+	<script type="text/javascript" src="https://cdn.jsdelivr.net/npm/echarts@5.2.2/dist/echarts.min.js"></script>
+	<script src="js/xxt.js" type="text/javascript" charset="utf-8"></script>
+</html>
