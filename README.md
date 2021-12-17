@@ -8,7 +8,7 @@ Here is the link to the webpage of our data story :
 
 In recent years, various efforts have been made around the world for the protection of women's rights. Many people believe that we are now in a society of relative gender equality, but does this optimism hold? Unfortunately, we still have a long way to go on the road to gender equality. The gender equality we have established is incomplete and fragile, which was revealed by the Covid-19 epidemic. According to UN Women, women have a much higher rate of unemployment due to the epidemic than men, 11 million girls may lose access to education forever, and 47 million women are expected to end the year in extreme poverty because of the economic consequences of the epidemic, reversing decades of progress...
 
-We believe that we need to quantify the persistent sexism in our society through data, and conducting analysis on the voices of people from all walks of life in the media is a good way. Quotebank [1] made it possible to achieve this goal. In this project, we conducted various analyses on the dataset to explore people's gender stereotypes and discriminations and accordingly reveal women’s social status, which brought to light the severity of gender inequality and urgency of make a change with solid evidence.
+We believe that we need to quantify the persistent sexism in our society through data, and one good approach is through conducting analysis on the voices of people from all walks of life in the media. Quotebank [1] made it possible to achieve this goal. In this project, we conducted various analyses on the dataset to explore people's gender stereotypes and discriminations and accordingly revealed women’s social status, which brought to light the severity of gender inequality and urgency of making a change with solid evidence.
 
 ## Research questions
 
@@ -31,7 +31,9 @@ We believe that we need to quantify the persistent sexism in our society through
 
 ## Proposed additional datasets
 
-- To reveal the frequency of using gender-neutral words, a dataset of gender-propelled words (with roughly 100 feminine - masculine word pairs, e.g. actress-actor) from a relative research and a smaller dataset of gender-neutral words (e.g. policewoman-policeman-police officer) are employed.
+- To reveal the frequency of using gender-neutral words, a dataset of gender-propelled words (with roughly 100 feminine - masculine word pairs, e.g. actress-actor) from a relative research and a smaller dataset of gender-neutral words (e.g. policewoman-policeman-police officer) are employed.(https://github.com/uclanlp/gn_glove/tree/master/wordlist)
+- To explore the difference between the language used by Democratic Party and Republican Party, a score sheet including 700 words with scores ranging from 1 (most feminine) to 7 (most masculine) was introduced.(https://journals.sagepub.com/doi/suppl/10.1177/1065912919874883)
+
 - To investigate the attention given to the issue of gender equality, a dataset of gender equality related words and phrases is used to obtain the relevant quotations.
 - WIKI dump data of attribute: Including the Nationality, gender, party and occupation of all attributes proposed by the dataset.
 
