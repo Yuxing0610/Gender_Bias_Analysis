@@ -1,8 +1,10 @@
-﻿﻿# “He” and “She”：an explorative data analysis on gender equality based on Quotebank dataset
+﻿﻿﻿# “He” and “She”：an explorative data analysis on gender equality based on Quotebank dataset
 
 ## Data Story
 
 Here is the link to the webpage of our data story : 
+
+http://adaysmj.com:8010/#d1
 
 ## Abstract
 
