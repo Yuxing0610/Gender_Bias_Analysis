@@ -18,7 +18,7 @@ Since the phenomenon is quite common in many aspects of lives, we classify the d
 - How do the answers of the above three questions evolve along with time?
 - Are there any different trends on these gender equality questions in different aspects of topics(e.g. Politics, Health, Art, etc.)?
 - An interesting follow-up question can be: are there any differences between the Democratic Party members and Republican Party members regarding the use of masculine language( based on this related research: [Linking Gender, Language, and Partisanship: Developing a Database of Masculine and Feminine Words](https://journals.sagepub.com/doi/10.1177/1065912919874883)
-- What kind of social attention the topic of gender equality receives and what are people's attitudes towards gender equality (optimistic, pessimistic, pro, anti)？
+- What kind of social attention the topic of gender equality receives and what are people's attitudes towards gender equality？
 
 ## Proposed additional datasets
 
@@ -34,14 +34,14 @@ Since the phenomenon is quite common in many aspects of lives, we classify the d
 - Topic categorization: Exploit existing categories of quotations implied by its url and text content.
 - Collection of character information: Extract people’s information from Wiki dump and build tables.
 - Word bank acquisition: Use existing wordbank online.
-
+- Gender-related qutations extraction: Use keywords matching to extract quotations.
 **Data analysis:**
 
 - Do statistics by matching the masculine words and feminine words in the text of fixed subset of data of specific newspaper, year and topic to obtain information on gender concerns.
 
 - Use word embedding to determine whether some words that should be neuter words (such as " politician, housekeeper, strong, weak", etc.) are no longer neuter because they are more frequently to be used to describe or refer to people of one gender instead of another.
 
-- Use sentiment analysis on the quotations relevant to the issue of gender equality to infer people's attitude (such as “supportive”, “objective”, “optimistic” or “pessimistic”) towards this issue.
+- Use sentiment analysis on the quotations relevant to the issue of gender equality to infer people's attitude towards this issue.
 
 **Results visualization and interpretation:**
 
@@ -59,7 +59,7 @@ Since the phenomenon is quite common in many aspects of lives, we classify the d
 | Week 12  | 06 Dec - 12 Dec |               Sentimental analysis               |
 | Week 13  | 13 Dec - 17 Dec |              Writing the data story and preparing for the presentation               |
 
-## Organization within the team
+## Contributions within the team
 
 - Yueqing Shen: Collect masculine words and feminine words and build a thesaurus, perform corresponding text matching, and analyze the frequency and proportion of words, etc., and perform corresponding data visualization work.
 
@@ -67,7 +67,7 @@ Since the phenomenon is quite common in many aspects of lives, we classify the d
 
 - Zhipeng Mao: Processing the raw quotebank data, extract the needed data, and classify the topics and create a search engine for the dataset to facilitate subsequent data retrieval.
 
-- Yuxing Yao: Extract and analyze attributer's features through wiki dump and build sentiment analysis models to analyze people's attitudes towards specific topics.
+- Yuxing Yao: Extract and analyze attributer's features through wiki dump and build sentiment analysis models to analyze people's attitudes towards gender-related topics.
 
 ## Questions for TAs
 
