@@ -4,7 +4,7 @@
 
 Here is the link to the webpage of our data story : 
 
-http://adaysmj.com:8010/#d1
+http://www.adaysmj.com/
 
 ## Abstract
 
